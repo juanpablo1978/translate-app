@@ -1,70 +1,60 @@
-# React + TypeScript + Vite
+# Translate App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación de traducción hecha con **React**, **TypeScript** y consumo de API externa.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧐 Descripción
 
-## Expanding the ESLint configuration
+Translate App es una herramienta que permite traducir texto entre distintos idiomas usando una API de traducción (por ejemplo, Google Translate API, LibreTranslate, DeepL, u otra). Está hecha con TypeScript para mayor seguridad de tipos, buenas prácticas y mantenibilidad.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✅ Características
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- Entrada de texto para traducir  
+- Elección del idioma origen y destino  
+- Envío a una API de traducción para obtener el texto traducido  
+- Manejo de carga / loading mientras se espera la respuesta  
+- Manejo de errores (p.ej. problemas de red, idioma no soportado)  
+- Interfaz sencilla y clara  
+- Diseño responsivo  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Tecnologías usadas
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- React  
+- TypeScript  
+- CSS / Tailwind CSS (o el framework de estilos que uses)  
+- API de traducción externa  
+- HTML  
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# translate-app
+---
+
+## 🚀 Despliegue / Demo
+
+Describe dónde podés ver la app desplegada (por ejemplo con Vercel, Netlify, GitHub Pages, etc.).  
+
+---
+
+## 🔧 Instalación y uso
+
+Estos son los pasos para correr la app localmente:
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/juanpablo1978/translate-app.git
+
+# Ir al directorio
+cd translate-app
+
+# Instalar dependencias
+npm install
+# o si usás yarn
+# yarn install
+
+# Levantar en modo desarrollo
+npm run dev
+# o yarn dev
+
