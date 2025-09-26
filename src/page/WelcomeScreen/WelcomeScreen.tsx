@@ -10,7 +10,7 @@ const navigateTranslate = ()=> {
 
   return (
     <main
-      className="min-h-screen bg-gradient-to-r from-yellow-300 to-yellow-200 
+      className="min-h-screen bg-gradient-to-r from-orange-300 to-orange-200 
     flex justify-center items-center"
     >
    <button className="w-[183px] h-[85px] rounded-md border-gray-300 border-[3px] text-[36px] font-bold 
@@ -19,7 +19,7 @@ const navigateTranslate = ()=> {
      hover:border-gray-400 hover:scale-105 active:scale-95 hover:border-dotted
      shadow-[0_6px_20px_rgba(0,0,0,0.35)]"
      onClick={navigateTranslate} >
-        START
+        Welcome
         </button>
 
 

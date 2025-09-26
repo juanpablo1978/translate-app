@@ -45,12 +45,12 @@ setTranslateText(data.responseData.translatedText);
   };
 
   return (
-    <main className="min-h-screen pt-6 w-full h-screen bg-cover  bg-[rgb(11,3,17)] lg:p-6 md:p-6">
+    <main className="min-h-screen pt-6 w-full h-screen bg-cover  bg-[rgb(15,1,24)] lg:p-6 md:p-6">
       <h2 className="text-[25px] md:text-[35px] font-bold text-center lg:text-start md:text-start ">
         <span className=" bg-gradient-to-r from-gray-400 to-gray-200 bg-clip-text text-transparent">
           Translate
         </span>
-        <span className=" bg-gradient-to-r from-yellow-600 to-yellow-200 bg-clip-text text-transparent">
+        <span className=" bg-gradient-to-r from-orange-600 to-orange-200 bg-clip-text text-transparent">
           App.
         </span>
       </h2>
