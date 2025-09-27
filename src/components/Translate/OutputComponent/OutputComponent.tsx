@@ -13,16 +13,16 @@ const OutputComponent: React.FC<OutputComponentProps> = ({
   translateText,
   targetLang,
   setTargetLang,
-  textToTranslate
+  
 }) => {
 
     	const [showCopyAlert, setShowCopyAlert] = useState(false);
 
 	// Function to copy the text to the clipboard
 	const handleCopyClipboard = async () => {
-		if (textToTranslate.length < 1) return;
+		if (translateText.length < 1) return;
 
-		await navigator.clipboard.writeText(textToTranslate);
+		await navigator.clipboard.writeText(translateText);
 		setShowCopyAlert(true);
 		setTimeout(() => {
 			setShowCopyAlert(false);
